@@ -1,0 +1,329 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff7f0;
+      color: #333;
+    }
+    /* Navbar */
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #d62828 !important;
+    }
+    .nav-link {
+      font-weight: 600;
+      color: #444 !important;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #d62828 !important;
+    }
+    /* Hero */
+    #hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      position: relative;
+    }
+    #hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(214, 40, 40, 0.6);
+      z-index: 0;
+    }
+    #hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    #hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    #hero .btn-order {
+      background-color: #fff;
+      color: #d62828;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      text-shadow: none;
+    }
+    #hero .btn-order:hover {
+      background-color: #d62828;
+      color: #fff;
+      text-shadow: none;
+    }
+    /* Menu Section */
+    #menu {
+      padding: 4rem 0 2rem;
+      /* background-color: #fff; */
+    }
+    #menu h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #d62828;
+      font-weight: 700;
+    }
+    .menu-category {
+      margin-bottom: 3rem;
+    }
+     .menu-category .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .menu-category .col-md-4 {
+    display: flex;
+  }
+  .menu-category h3{
+     display: inline-block;
+  border-bottom: 3px solid #000000; /* Blue underline */
+  padding-bottom: 5px;
+  }
+    .menu-item {
+      background: #fff3f2;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgb(214 40 40 / 0.15);
+      transition: transform 0.3s ease;
+          width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    }
+    .menu-item h5 {
+      font-weight: 700;
+      color: #d62828;
+      margin-bottom: 0.5rem;
+    }
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .menu-item .price {
+      font-weight: 700;
+      color: #222;
+      margin-top: 0.7rem;
+      font-size: 18px;
+    }
+    /* Deals Section */
+    #deals {
+      background-color: #d62828;
+      color: white;
+      padding: 3rem 0;
+    }
+    #deals h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+       display: inline-block;
+  border-bottom: 3px solid #000000; /* Blue underline */
+  padding-bottom: 5px;
+    }
+    .deal-card {
+      background: #fff7f0;
+      border-radius: 15px;
+      padding: 1.5rem;
+      color: #d62828;
+      text-align: center;
+      /* box-shadow: 0 5px 15px rgb(0 0 0 / 0.1); */
+      transition: transform 0.3s ease;
+    }
+    .deal-card:hover {
+      transform: translateY(-10px);
+    }
+    .deal-card h4 {
+      margin-bottom: 1rem;
+    }
+    .deal-card p {
+      font-weight: 600;
+    }
+    /* About Us */
+    #about {
+      padding: 4rem 0;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      background-color: #fff3f2;
+    }
+    #about img {
+      /* flex: 1 1 400px; */
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgb(214 40 40 / 0.2);
+      /* max-width: 100%; */
+      width: 100%;
+    }
+    #about .content {
+      flex: 1 1 400px;
+    }
+    #about h2 {
+     color: #d62828;
+  font-weight: 700;
+  margin-bottom: 1rem;
+   display: inline-block;
+  border-bottom: 3px solid #000000; /* Blue underline */
+  padding-bottom: 5px;
+    }
+    #about p {
+       color: #444;
+  font-size: 1rem;
+  line-height: 1.6;;
+    }
+    /* #about .und{
+        display: inline-block;
+  border-bottom: 3px solid #000000; 
+  padding-bottom: 5px;
+    } */
+    /* Testimonials */
+    #testimonials {
+      background-color: #fff;
+      padding: 3rem 0;
+    }
+    #testimonials h2 {
+    display: inline-block;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  color: #d62828;
+  font-weight: 700;
+    }
+    .testimonial-card {
+      background: #fff3f2;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgb(214 40 40 / 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    .testimonial-card h5 {
+      font-weight: 700;
+      color: #d62828;
+    }
+    /* .testimonial .lft{
+          padding: 0 15px; 
+  text-align: center;
+  color: #d62828;
+  font-weight: 700;
+    } */
+    /* Contact Section */
+    h3{
+        font-size: 40px !important;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    
+    #contact {
+      background-color: #fff3f2;
+      padding: 4rem 0 3rem;
+    }
+    #contact h2 {
+     display: inline-block;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  color: #d62828;
+  font-weight: 700;
+    }
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    #contact input,
+    #contact textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      border: 1.8px solid #d62828;
+      font-size: 1rem;
+      resize: none;
+      transition: border-color 0.3s;
+    }
+    #contact input:focus,
+    #contact textarea:focus {
+      outline: none;
+      border-color: #ff4646;
+      box-shadow: 0 0 5px #ff4646;
+    }
+    #contact button {
+      background-color: white;
+      color: #d62828;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+    #contact button:hover{
+      background-color: #d62828;
+      color: white;
+    }
+    /* Footer */
+    footer {
+      background-color: #d62828;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: white;
+      margin: 0 0.6rem;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #ffb4b4;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      #about {
+        flex-direction: column;
+      }
+      #hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+    @media (max-width: 320px){
+        #about img{
+            margin-left: 0px;
+        }
+        #about p{
+            text-align: justify;
+        }
+    }
+    @media (max-width: 320px){
+        #testimonials h2{
+            margin-left: 6px;
+        }
+    }
