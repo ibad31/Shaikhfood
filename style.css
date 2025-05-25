@@ -17,6 +17,10 @@ body {
     .nav-link:hover {
       color: #d62828 !important;
     }
+    /* Extra height to enable scrolling */
+    body {
+      height: 2000px;
+    }
     /* Hero */
     #hero {
       background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
@@ -31,7 +35,7 @@ body {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(214, 40, 40, 0.6);
+      background: rgba(214, 40, 40, 0.171);
       z-index: 0;
     }
     #hero .container {
